@@ -5,7 +5,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
     public static void main(String[] args) {
-        //wire up SpeakerService
         /***
          * This is loading Spring and it's loading the configuration into ApplicationContext
          */
