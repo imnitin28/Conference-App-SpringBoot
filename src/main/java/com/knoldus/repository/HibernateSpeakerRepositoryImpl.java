@@ -9,7 +9,7 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository{
     public List<Speaker> findAll() {
         List<Speaker> speakers = new ArrayList<Speaker>();
 
-        Speaker speaker = new Speaker();
+        Speaker speaker = new Speaker(); //pain point -- hard coded -- eliminated in Spring
 
         speaker.setFirstName("Nitin");
         speaker.setLastName("Mishra");
