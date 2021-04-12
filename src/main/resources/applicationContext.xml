@@ -6,10 +6,10 @@
 
     <bean name="speakerRepository"
           class="com.knoldus.repository.HibernateSpeakerRepositoryImpl"/>
+    <!--        autowired by constructor-->
+    <bean name="speakerService" class="com.knoldus.service.SpeakerServiceImpl" autowire="constructor">
 
-    <bean name="speakerService"
-          class="com.knoldus.service.SpeakerServiceImpl">
-<!--        constructor injection - index-->
-        <constructor-arg index="0" ref="speakerRepository"/>
+<!--&lt;!&ndash;        constructor injection - index&ndash;&gt;-->
+<!--        <constructor-arg index="0" ref="speakerRepository"/>-->
     </bean>
 </beans>
