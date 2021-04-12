@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
     public static void main(String[] args) {
+        //configuring app with bean reference
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         //SpeakerService service = new SpeakerServiceImpl();
         SpeakerService service = applicationContext.getBean("speakerService",SpeakerService.class);
